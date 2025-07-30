@@ -1,0 +1,8 @@
+{
+  "host": "xyz.db.sap.com",
+  "port": 5432,
+  "user": "admin",
+  "password": "mypassword",
+  "database": "mydb",
+  "ssl": true
+}
