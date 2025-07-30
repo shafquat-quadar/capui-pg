@@ -5,7 +5,7 @@ let dbConfig = {}
 try {
   dbConfig = JSON.parse(fs.readFileSync('./pg-db-config.json'))
   cds.env.requires.db = {
-    kind: 'postgresql',
+    kind: 'postgres',
     credentials: dbConfig
   }
 } catch (err) {

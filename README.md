@@ -8,6 +8,8 @@ This project demonstrates a simple [SAP Cloud Application Programming Model](htt
    ```bash
    npm install
    ```
+   This project uses **@cap-js/postgres** for database connectivity and
+   requires Node.js 20 or higher.
 2. Create configuration files in the project root:
    - **`pg-db-config.json`** – PostgreSQL connection details
    - **`settings.json`** – Credentials for fetching OData metadata
