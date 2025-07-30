@@ -1,0 +1,26 @@
+{
+  "name": "capui-pg",
+  "version": "1.0.0",
+  "description": "CAP with PostgreSQL backend",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^9",
+    "cds-pg": "^0.1.36",
+    "axios": "^1",
+    "uuid": "^9",
+    "express": "^4"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^2",
+    "@cap-js/cds-types": "^0.13.0",
+    "@sap/cds-dk": "^7"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch": "cds watch"
+  }
+}
