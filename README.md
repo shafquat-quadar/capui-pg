@@ -13,11 +13,18 @@ This project demonstrates a simple [SAP Cloud Application Programming Model](htt
 2. Create configuration files in the project root:
    - **`pg-db-config.json`** – PostgreSQL connection details
    - **`settings.json`** – Credentials for fetching OData metadata
-3. Start in development mode
+3. Deploy the database schema (run once)
+   ```bash
+   npx cds deploy --model-only
+   ```
+   This creates the `cds_model` table and avoids errors like
+   "Didn't find deployed model for PostgreSQL" on first deployment.
+   Repeat `npx cds deploy` when the model changes.
+4. Start in development mode
    ```bash
    npm run watch
    ```
-4. Start in production
+5. Start in production
    ```bash
    npm start
    ```
